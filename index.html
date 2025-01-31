@@ -29,14 +29,15 @@
         <nav class="flex justify-between items-center mt-6 mb-6">
             <div class="flex text-4xl items-center">
                 <img class="mr-6" src="c1-assets/logo-header.png" alt="">
-                <h3 class="">Browse<span class="text-[#FFDC26]">4</span>pets</h3>
+
+                <h3 class="hidden lg:block">Browse<span class="text-[#FFDC26]">4</span>pets</h3>
             </div>
-            <div class="flex text-2xl items-center">
+            <div class="hidden lg:flex text-2xl items-center ">
                 <p class="mr-6">Find a pet</p>
                 <p class="mr-6">Breeds</p>
                 <p>Contact us</p>
             </div>
-            <div class="flex text-2xl items-center">
+            <div class="hidden lg:flex text-2xl items-center ">
                 <p class="mr-3"> <i class="fa-solid fa-magnifying-glass"></i>
                 </p>
                 <p class="mr-3"> <i class="fa-regular fa-bell"></i></p>
@@ -46,24 +47,32 @@
                 px-6 py-1">Register</p>
                 
             </div>
+            <div class="block lg:hidden">
+                <p class="text-[30px]"><i class="fa-solid fa-bars"></i></p>
+            </div>
         </nav>
     </header>
 
 
     <main>
-
+        <!-- banner section  -->
         <section class="relative mt-20">
 
-            <div class="w-1/2">
-                <p class="text-[70px] font-bold text-[#000000]">Pamper Your Pet, Because They Deserve the Bes</p>
-                <p class="text-[rgba(0,0,0,.7)] text-[27px]">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="bg-[#FFDC26] px-[30px] py-[10px] rounded-lg text-[20px] mt-4">Find a pet</button>
+            <div class="w-full lg:w-1/2">
+                <p class="text-[30px] lg:text-[70px] font-bold text-[#000000]">Pamper Your Pet, Because They Deserve the Bes</p>
+                <p class="text-[rgba(0,0,0,.7)] text-[16px] lg:text-[27px]">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="bg-[#FFDC26] px-[30px] py-[10px] rounded-lg text-[16px] lg:text-[20px] mt-4">Find a pet</button>
             </div>
-            <div class="absolute w-full -top-[100px] z-[-1]">
+            <div class="absolute w-full -bottom-[90px] lg:-top-[100px] z-[-1]">
                 <img class="w-full" src="c1-assets/cat-big.png" alt="big cat">
             </div>
         </section>
 
+        <!-- browse by category section -->
+
+        <!-- <section class="">
+            <h1>Browse By Categories</h1>
+        </section> -->
 
     </main>
 
