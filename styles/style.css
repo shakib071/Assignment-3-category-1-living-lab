@@ -1,0 +1,20 @@
+@keyframes textChange {
+    0% { content: "Cats"; color: red; }
+    25% { content: "Dog"; color: blue; }
+    50% { content: "Rabbit"; color: green; }
+    75% { content: "Parrot"; color: orange; }
+    100% { content: "Hamster"; color: red; }
+}
+
+.animated-text::after {
+    content: "hi"; 
+    font-size: 3rem;
+    font-weight: bold;
+    animation: textChange 3s infinite alternate;
+}
+
+@media screen and (min-width:720px) {
+    .animated-text::after {
+        font-size: 8rem;
+    }
+}
