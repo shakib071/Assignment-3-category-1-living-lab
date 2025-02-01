@@ -13,8 +13,20 @@
     animation: textChange 3s infinite alternate;
 }
 
+
+  .hidden-text {
+    display: inline-block;
+    animation: textDisappearAppear 4s infinite;
+  }
+
+  
+
 @media screen and (min-width:720px) {
     .animated-text::after {
         font-size: 8rem;
     }
 }
+
+
+
+
